@@ -1,0 +1,11 @@
+# Ignore log files
+*.log
+
+# Ignore temporary files
+temp/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore assignment evidence
+Assignment-Evidence/
