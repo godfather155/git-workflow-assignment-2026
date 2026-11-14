@@ -1,2 +1,109 @@
-git_commands.txt
- Copy content
+GIT & GITHUB WORKFLOW - COMMAND DOCUMENTATION
+
+1. git --version
+Checks the installed Git version.
+
+2. git config --global user.name "Ekjot Singh"
+Sets the name used to identify the author of Git commits.
+
+3. git config --global user.email "ekjot155@gmail.com"
+Sets the email address associated with Git commits.
+
+4. git config --global --list
+Displays the global Git configuration.
+
+5. git init -b main
+Initializes a local Git repository with main as its initial branch.
+
+6. git status
+Shows the current branch, staged changes, modified files, and untracked files.
+
+7. git add index.html about.html
+Stages the initial HTML files for committing.
+
+8. git commit -m "Initial project setup"
+Records the initial project files in repository history.
+
+9. git log --oneline
+Displays the commit history in a compact format.
+
+10. git show --stat HEAD
+Displays the latest commit and its file-change statistics.
+
+11. git add index.html
+Stages modifications made to the homepage.
+
+12. git commit -m "Update homepage content"
+Records the updated homepage in a second commit.
+
+13. git branch feature
+Creates a new branch named feature.
+
+14. git branch
+Lists local branches and identifies the current branch.
+
+15. git switch feature
+Switches the working directory to the feature branch.
+
+16. git add about.html
+Stages changes to the About page on the feature branch.
+
+17. git commit -m "Add feature branch content to about page"
+Records the About page changes on the feature branch.
+
+18. git switch main
+Returns to the main branch.
+
+19. git merge --no-ff feature -m "Merge feature branch into main"
+Merges feature into main while explicitly creating a merge commit.
+
+20. git log --oneline --graph --all --decorate
+Displays the commit graph, including branch and merge history.
+
+21. git check-ignore -v test.log temp/sample.txt .DS_Store Assignment-Evidence/
+Verifies which ignore rules apply to the specified files and folder.
+
+22. git add .gitignore
+Stages the Git ignore configuration.
+
+23. git commit -m "Add gitignore configuration"
+Records the ignore rules in Git history.
+
+24. git add undo-demo.txt
+Stages the temporary file used to demonstrate undoing a commit.
+
+25. git commit -m "Add temporary file for undo demonstration"
+Creates an additional commit that will subsequently be reversed.
+
+26. git revert --no-edit HEAD
+Reverses the latest commit by creating a new revert commit without opening an editor.
+
+27. git remote add origin https://github.com/godfather155/git-workflow-assignment-2026.git
+Connects the local repository to its GitHub remote.
+
+28. git remote -v
+Displays the configured remote URLs for fetching and pushing.
+
+29. git remote get-url origin
+Displays the URL configured for the origin remote.
+
+30. git remote set-url origin https://github.com/godfather155/git-workflow-assignment-2026.git
+Updates the origin remote URL.
+
+31. git fetch origin
+Downloads remote branch references and commits without merging them.
+
+32. git merge origin/main --allow-unrelated-histories -m "Merge GitHub repository initialization"
+Combines the independently initialized GitHub repository history with the local history.
+
+33. git push -u origin main
+Uploads main to GitHub and establishes its upstream tracking branch.
+
+34. git push -u origin feature
+Uploads the feature branch to GitHub and establishes upstream tracking.
+
+35. git branch -a
+Lists local and remote-tracking branches.
+
+36. git log --oneline --graph --all --decorate -15
+Displays up to 15 commits with branch references and graphical history.
